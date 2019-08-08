@@ -7,7 +7,13 @@ import logo from '../assets/logo.svg';
 export default function Login() {
     return(
         <div className="login-container">
-            <img src={logo} alt="Tindev" />
+            <form>
+                <img src={logo} alt="Tindev" />
+                <input
+                    placeholder="Digite seu usuário no Github"
+                />
+                <button type='submit'>Enviar</button>
+            </form>
         </div>
     );
 }
